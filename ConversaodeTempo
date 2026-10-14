@@ -1,0 +1,18 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) throws IOException {
+         Scanner sc = new Scanner(System.in);
+        
+        int entryvalue = sc.nextInt();
+        
+        int time = entryvalue / 3600;
+        int rest = entryvalue % 3600;
+        int minutes = rest / 60;
+        int seconds = rest % 60;
+        
+    System.out.println(time + ":" + minutes + ":" + seconds);
+ 
+    }
+ 
+}
